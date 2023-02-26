@@ -1,15 +1,11 @@
 import Head from "next/head"
 import Script from "next/script"
-
-import Logo from "../components/Logo"
-import Description from "../components/Description"
-import SocialMedia from "../components/SocialMedia"
-import Buttons from "../components/Buttons"
+import Header from "../components/Header"
 
 const Home = () => (
   <>
     <Head>
-      <title>Rent Plan LinkTree</title>
+      <title>Axel Barraza</title>
       <meta name="description" content="Start, systemize, and scale your real estate investing business at Rent Plan" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -18,7 +14,9 @@ const Home = () => (
 
     <Script src="https://kit.fontawesome.com/56472d7d03.js" crossOrigin="anonymous" />
 
-    <div id="main"></div>
+    <div id="main">
+      <Header />
+    </div>
   </>
 )
 
