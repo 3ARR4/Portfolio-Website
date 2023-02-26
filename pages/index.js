@@ -18,12 +18,7 @@ const Home = () => (
 
     <Script src="https://kit.fontawesome.com/56472d7d03.js" crossOrigin="anonymous" />
 
-    <div id="linktree">
-      <Logo />
-      <Description />
-      <Buttons />
-      <SocialMedia />
-    </div>
+    <div id="main"></div>
   </>
 )
 
