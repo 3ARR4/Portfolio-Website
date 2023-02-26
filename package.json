@@ -7,9 +7,7 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "release": "git add . && git commit -m \"Updating\" && git push",
-    "aws_stage": "npm run build && aws s3 sync out/ s3://rentplan.stage.linktree",
-    "aws_prod": "npm run build && aws s3 sync out/ s3://rentplan.prod.linktree"
+    "release": "git add . && git commit -m \"Updating\" && git push"
   },
   "dependencies": {
     "@fortawesome/fontawesome-pro": "^6.1.1",
