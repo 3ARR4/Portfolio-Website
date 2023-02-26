@@ -1,0 +1,38 @@
+{
+  "name": "linktree",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint",
+    "release": "git add . && git commit -m \"Updating\" && git push",
+    "aws_stage": "npm run build && aws s3 sync out/ s3://rentplan.stage.linktree",
+    "aws_prod": "npm run build && aws s3 sync out/ s3://rentplan.prod.linktree"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-pro": "^6.1.1",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/pro-light-svg-icons": "^6.1.1",
+    "@fortawesome/pro-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@popperjs/core": "^2.11.5",
+    "bootstrap": "^5.1.3",
+    "next": "^12.3.0",
+    "node-sass": "^7.0.1",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-responsive": "^9.0.0-beta.10",
+    "sass": "^1.54.4"
+  },
+  "devDependencies": {
+    "eslint": "8.14.0",
+    "eslint-config-next": "12.1.5",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2"
+  }
+}

@@ -1,0 +1,103 @@
+$color-primary: #009639;
+$color-secondary: #0041cd;
+$color-tertiary: white;
+$color-quartery: #ff841e;
+
+body {
+  background-image: url("../public/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#linktree {
+  min-width: 375px;
+  max-width: 550px;
+  margin: auto;
+  padding: 1.5rem 1rem;
+
+  .text {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 8px;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: italic;
+
+    span {
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: 568px) {
+      font-size: 1rem;
+    }
+  }
+
+  #logo {
+    background-color: #f4dadf;
+    border-radius: 30px;
+    text-align: center;
+  }
+
+  #social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 0 0.5rem;
+  }
+
+  #buttons a {
+    // Center the buttons and remove link underlines
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
+    .btn.btn-primary {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 10px 10px;
+      background-color: $color-primary;
+      border-color: $color-primary;
+      border-radius: 1rem;
+
+      // Mobile
+      font-size: 14px;
+      // Tablet
+      @media only screen and (min-width: 568px) and (max-width: 991px) {
+        font-size: 18px;
+      }
+      // Desktop
+      @media only screen and (min-width: 992px) {
+        font-size: 18px;
+      }
+
+      // Forces the right side arrow to the far right
+      i:last-child {
+        margin-left: auto;
+        padding-right: 1rem;
+      }
+
+      // Hover effect on buttons
+      &:hover {
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+        color: $color-tertiary;
+      }
+    }
+  }
+  #webinar {
+    background-color: $color-quartery !important;
+    border-color: $color-quartery !important;
+    color: black !important;
+    font-weight: 600;
+
+    &:hover {
+      background-color: #cd5d00 !important;
+      border-color: #cd5d00 !important;
+    }
+  }
+}
